@@ -1,0 +1,39 @@
+Patch File for DeHackEd v3.0
+Doom version = 21
+Patch format = 6
+
+Thing 2 (Zombieman)
+ID # = 3004
+Hit points = 40
+Speed = 9
+Width = 20
+Bits = SHOOTABLE+COUNTKILL
+
+Frame 10
+Duration = 4
+Next frame = 11
+Sprite number = 5
+
+Weapon 1 (Pistol)
+Ammo type = 1
+Select frame = 20
+
+Ammo 1
+Per ammo = 2
+
+Pointer 5 (Frame 100)
+Codep Frame = 77
+
+Misc
+Initial Health = 90
+Max Health = 190
+
+Cheat 0
+Change music = idmus
+
+Text 6 6
+OLDNEW
+[STRINGS]
+HUSTR_E1M1 = Hangar Test
+[CODEPTR]
+FRAME 10 = A_Look

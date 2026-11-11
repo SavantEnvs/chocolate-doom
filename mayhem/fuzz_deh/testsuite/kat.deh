@@ -1,0 +1,12 @@
+Patch File for DeHackEd v3.0
+Doom version = 21
+Patch format = 6
+
+Thing 1 (Player)
+Hit points = 250
+
+Frame 3 (Play)
+Duration = 9
+
+Ammo 0 (Bullets)
+Max ammo = 321

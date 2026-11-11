@@ -1,0 +1,13 @@
+Patch File for DeHackEd v3.0
+Doom version = 21
+Patch format = 6
+
+Sound 1 (Pistol)
+Zero/One = 1
+Offset = 0
+
+Sprite 3
+Offset = 12
+
+Par 1 1 30
+Par 2 3 120

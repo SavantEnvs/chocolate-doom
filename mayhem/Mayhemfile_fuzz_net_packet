@@ -1,0 +1,9 @@
+project: savantenvs/chocolate-doom
+target: fuzz_net_packet
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_net_packet/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_net_packet
+    libfuzzer: true
+    timeout: 60

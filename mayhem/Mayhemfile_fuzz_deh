@@ -1,0 +1,12 @@
+project: savantenvs/chocolate-doom
+target: fuzz_deh
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_deh/testsuite
+cmds:
+  # Literal staged path, no @@: for an AFL target Mayhem does not resolve @@ to the staged file when
+  # filepath: is set, so the binary opened a missing file (19/14 edges) instead of the input.
+  - cmd: /mayhem/fuzz_deh input.deh
+    afl: true
+    filepath: input.deh
+    timeout: 60

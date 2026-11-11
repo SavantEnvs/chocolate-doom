@@ -1,0 +1,9 @@
+project: savantenvs/chocolate-doom
+target: fuzz_midifile
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_midifile/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_midifile
+    libfuzzer: true
+    timeout: 60
